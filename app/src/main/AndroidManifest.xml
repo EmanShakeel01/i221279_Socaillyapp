@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".call"
+            android:exported="false" />
+        <activity
+            android:name=".inbox"
+            android:exported="false" />
+        <activity
+            android:name=".chatlist"
+            android:exported="false" />
+        <activity
+            android:name=".searchbar"
+            android:exported="false" />
+        <activity
             android:name=".searchpage"
             android:exported="false" />
         <activity

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chatlist">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/status"
+        android:scaleType="fitXY"
+        app:tint="@android:color/black" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
+
+        <!-- Back arrow -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back2"
+            app:tint="@color/darkbrown"
+            android:layout_gravity="center_vertical"
+            android:padding="4dp"/>
+
+        <!-- Username -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jacob_w"
+            android:textSize="18sp"
+            android:textColor="@color/darkbrown"
+            android:textStyle="bold"
+            android:layout_marginStart="140dp" />
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <!-- Add new ( + ) -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/add"
+            app:tint="@color/darkbrown"/>
+    </LinearLayout>
+
+    <!-- Search box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:background="#F5F5F5"
+        android:layout_margin="4dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTintMode="src_in"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            app:tint="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/search_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:hint="Search"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Scrollable message list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Single Chat Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="12dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatarImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mystory"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/lightgrey" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="joshua_l"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Have a nice day, bro!"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=". now"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/camera"
+                    app:tint="@color/darkbrown" />
+            </LinearLayout>
+
+            <!-- Duplicate above block for each chat -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Camera Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/camera"
+            app:tint="@color/darkbrown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:layout_marginStart="6dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Handle line -->
+    <View
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/line"
+        android:tint="@color/darkbrown"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

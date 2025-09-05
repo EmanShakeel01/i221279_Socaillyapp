@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".inbox">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/status"
+        android:scaleType="fitXY"
+        android:background="@color/lighter_grey"
+        app:tint="@android:color/black" />
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/lighter_grey"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp">
+
+        <!-- Profile Circle -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mystory"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/lightgrey" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="internshala"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Video & Info Icons -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_videocam"
+            android:layout_marginEnd="16dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_info" />
+    </LinearLayout>
+
+    <!-- Chat Area -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <!-- Timestamp -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:49 PM"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"/>
+
+
+        <!-- Example Message Bubble -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="510dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/lightpink"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:text="Hello"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!-- Bottom Input Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#F5E4E2"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:tint="@color/darkbrown"
+            android:src="@drawable/camera" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Message..."
+            android:padding="8dp"
+            android:background="@android:color/white"
+            android:layout_marginHorizontal="8dp"
+            android:drawablePadding="8dp" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_mic"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_emoji" />
+    </LinearLayout>
+</LinearLayout>

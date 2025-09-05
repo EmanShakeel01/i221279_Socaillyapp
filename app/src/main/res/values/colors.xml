@@ -8,4 +8,5 @@
     <color name="lightpink"> #B07071</color>
     <color name="pink"> #A3797E</color>
     <color name="red"> #B90000</color>
+    <color name="lighter_grey">#F5F5F5</color>
 </resources>
