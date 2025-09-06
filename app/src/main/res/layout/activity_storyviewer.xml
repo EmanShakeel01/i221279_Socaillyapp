@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".storyviewer">
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/status"
+        android:scaleType="fitXY"
+        app:tint="@android:color/white" />
+    <!-- Story viewer progress bars (multiple segments) -->
+    <LinearLayout
+        android:id="@+id/storyViewer"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="4dp"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/storyProgress1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="50"
+            android:layout_marginTop="50dp"
+            android:progressDrawable="@drawable/story_progress_drawable"
+            android:max="100"/>
+
+        <ProgressBar
+            android:id="@+id/storyProgress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:layout_marginTop="50dp"
+            android:progressDrawable="@drawable/story_progress_drawable"
+            android:max="100"
+            android:layout_marginStart="4dp"/>
+
+        <ProgressBar
+            android:id="@+id/storyProgress3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:layout_marginTop="50dp"
+            android:progressDrawable="@drawable/story_progress_drawable"
+            android:max="100"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <!-- Top bar with profile + username -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storyViewer"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/mystory"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="craig_love"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Story image fills space between top bar and bottom bar -->
+    <ImageView
+        android:id="@+id/storyImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_above="@id/messageBar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/postsample" />
+
+    <!-- Bottom message bar -->
+    <LinearLayout
+        android:id="@+id/messageBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@android:color/transparent">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Send Message"
+            android:padding="10dp"
+            android:textColorHint="@color/pink"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_send"
+            android:tint="@color/pink"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</RelativeLayout>
