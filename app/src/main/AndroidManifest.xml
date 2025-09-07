@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".activityprofile2"
+            android:exported="false" />
+        <activity
+            android:name=".activitypofile"
+            android:exported="false" />
+        <activity
+            android:name=".storyviewer2"
+            android:exported="false" />
+        <activity
+            android:name=".storyviewer1"
+            android:exported="false" />
+        <activity
             android:name=".storyviewer"
             android:exported="false" />
         <activity
