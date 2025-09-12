@@ -147,21 +147,21 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/socially" />
+                    android:src="@drawable/profile1" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/camera" />
+                    android:src="@drawable/postsample" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/search" />
+                    android:src="@drawable/profile3" />
 
                 <!-- Row 2 -->
                 <ImageView
@@ -169,21 +169,21 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/status" />
+                    android:src="@drawable/profile4" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic5" />
+                    android:src="@drawable/profile5" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic6" />
+                    android:src="@drawable/profile6" />
 
                 <!-- Row 3 -->
                 <ImageView
@@ -191,42 +191,42 @@
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic7" />
+                    android:src="@drawable/profile7" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic8" />
+                    android:src="@drawable/profile9" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic9" />
+                    android:src="@drawable/profile10" />
                 <!-- Row 3 -->
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic7" />
+                    android:src="@drawable/profile4" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic8" />
+                    android:src="@drawable/mystory" />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pic9" />
+                    android:src="@drawable/profile1" />
             </GridLayout>
         </LinearLayout>
     </ScrollView>
@@ -234,17 +234,68 @@
 
     <!-- Bottom Navigation Bar -->
     <LinearLayout
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/bottomtab" />
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home1"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/nav_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search2"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/nav_reels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/reels"
+            app:tint="@color/darkbrown" />
+
+        <ImageView
+            android:id="@+id/nav_shop"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/like"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="6dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/mystory"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/pink"
+            android:scaleType="centerCrop" />
     </LinearLayout>
+
 
     <!-- Bottom Handle Line -->
     <RelativeLayout

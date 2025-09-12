@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/postsample" />
+        android:src="@drawable/profile4" />
 
     <!-- Top Bar -->
     <ImageView
@@ -26,7 +26,7 @@
         android:src="@drawable/status"
         android:scaleType="fitXY"
         android:background="@color/black"
-        android:tint="@android:color/white" />
+        app:tint="@android:color/white" />
 
 
     <!-- Bottom Navigation Bar -->
@@ -44,7 +44,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/profilepic" />
+            android:src="@drawable/profile2" />
 
         <!-- Username & Date -->
         <LinearLayout
@@ -76,7 +76,7 @@
             android:layout_height="24dp"
             android:layout_gravity="end"
             android:layout_weight="1"
-            android:src="@drawable/close_icon" />
+            android:src="@drawable/add" />
     </LinearLayout>
 
     <LinearLayout
@@ -86,7 +86,7 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:background="#CC000000"
-        android:weightSum="5">
+        android:weightSum="6">
 
         <!-- Activity -->
         <LinearLayout
@@ -97,10 +97,11 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/ic_activity"
+                android:src="@drawable/activity"
                 android:background="@color/black"
-                android:tint="@android:color/white" />
+                app:tint="@android:color/white" />
         </LinearLayout>
+
 
         <!-- Create -->
         <LinearLayout
@@ -111,8 +112,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/ic_create"
-                android:tint="@android:color/white" />
+                android:src="@drawable/reels"
+                app:tint="@android:color/white" />
         </LinearLayout>
 
         <!-- Add Post -->
@@ -124,8 +125,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/ic_add_post"
-                android:tint="@android:color/white" />
+                android:src="@drawable/grid"
+                app:tint="@android:color/white" />
         </LinearLayout>
 
         <!-- Browse -->
@@ -137,8 +138,20 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/ic_browse"
-                android:tint="@android:color/white" />
+                android:src="@drawable/browse"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/share"
+                android:background="@color/black"
+                app:tint="@android:color/white" />
         </LinearLayout>
 
         <!-- More -->
@@ -150,8 +163,8 @@
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/ic_more"
-                android:tint="@android:color/white" />
+                android:src="@drawable/options"
+                app:tint="@android:color/white" />
         </LinearLayout>
     </LinearLayout>
 
@@ -167,22 +180,22 @@
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:src="@drawable/ic_heart"
-            android:tint="#FF4444"
+            android:src="@drawable/like1"
+            app:tint="@color/red"
             android:layout_marginBottom="8dp" />
 
         <ImageView
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:src="@drawable/ic_heart"
-            android:tint="#FF6666"
+            android:src="@drawable/like1"
+            app:tint="@color/red"
             android:layout_marginBottom="8dp" />
 
         <ImageView
             android:layout_width="12dp"
             android:layout_height="12dp"
-            android:src="@drawable/ic_heart"
-            android:tint="#FF8888" />
+            android:src="@drawable/like1"
+            app:tint="@color/red" />
     </LinearLayout>
 
 </RelativeLayout>

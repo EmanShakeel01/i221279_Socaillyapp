@@ -25,6 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/pink"
+            android:textStyle="bold"
             android:text="Cancel"
             android:textSize="16sp"
 
@@ -45,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Next"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="@color/pink"
 
@@ -61,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/sample_photo" />
+            android:src="@drawable/profile7" />
 
         <!-- Bottom overlay buttons -->
         <LinearLayout
@@ -76,20 +78,23 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_infinity"
+                android:src="@drawable/music"
+                app:tint="@color/white"
                 android:layout_marginHorizontal="8dp" />
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_grid"
+                android:src="@drawable/grid"
+                 app:tint="@color/white"
                 android:layout_marginHorizontal="8dp" />
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="23dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_layers"
-                android:layout_marginHorizontal="8dp" />
+                android:layout_marginHorizontal="8dp"
+                android:src="@drawable/multiple"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,17 +106,90 @@
     </FrameLayout>
 
     <!-- Gallery Grid -->
-    <GridView
-        android:id="@+id/galleryGrid"
+    <!-- Scrollable Section -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:numColumns="3"
-        android:verticalSpacing="2dp"
-        android:horizontalSpacing="2dp"
-        android:stretchMode="columnWidth"
-        android:clipToPadding="false"
-        android:padding="2dp" />
+        android:fillViewport="true">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:useDefaultMargins="true"
+            android:padding="2dp"
+            android:layout_marginTop="12dp">
+
+            <!-- Row 1 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/postsample" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile3" />
+
+            <!-- Row 2 -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile4" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile5" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile6" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/postsample" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mystory" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile6" />
+
+        </GridLayout>
+    </ScrollView>
+
 
     <!-- Bottom Navigation -->
     <LinearLayout
@@ -126,6 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Library"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="@color/pink"
             android:layout_marginHorizontal="24dp" />
@@ -134,6 +213,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Photo"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="@color/pink"
             android:layout_marginHorizontal="24dp" />
@@ -142,6 +222,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Video"
+            android:textStyle="bold"
             android:textSize="16sp"
             android:textColor="@color/pink"
             android:layout_marginHorizontal="24dp" />

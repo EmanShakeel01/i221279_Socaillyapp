@@ -43,35 +43,35 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_share"
+            android:src="@drawable/people"
             android:tint="@android:color/white"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_text"
+            android:src="@drawable/grid"
             android:tint="@android:color/white"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_emoji"
+            android:src="@drawable/emoji"
             android:tint="@android:color/white"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_music"
+            android:src="@drawable/music"
             android:tint="@android:color/white"
             android:layout_marginEnd="8dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/ic_more"
+            android:src="@drawable/options"
             android:tint="@android:color/white"/>
     </LinearLayout>
 
@@ -93,7 +93,7 @@
             android:backgroundTint="@color/lightgrey"
             android:text="Your stories"
             android:textColor="@android:color/black"
-            android:drawableLeft="@drawable/ic_story"
+
             android:layout_marginEnd="12dp"/>
 
         <Button
@@ -103,16 +103,16 @@
             android:backgroundTint="@color/lightgrey"
             android:text="Close Friends"
             android:textColor="@android:color/black"
-            android:drawableLeft="@drawable/ic_friend"
+
             android:layout_marginEnd="12dp"/>
 
         <ImageButton
             android:id="@+id/nextBtn"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:src="@drawable/ic_next"
+            android:src="@drawable/back2"
             android:backgroundTint="@color/pink"
-            android:background="@drawable/rounded_button_bg"
+
             android:tint="@android:color/white"/>
 
 

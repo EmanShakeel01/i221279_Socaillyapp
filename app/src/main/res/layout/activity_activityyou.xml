@@ -126,7 +126,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/mystory"
+                    android:src="@drawable/profile2"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@color/pink" />
 
@@ -141,7 +141,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/postsample"
+                    android:src="@drawable/profile1"
                     android:scaleType="centerCrop" />
             </LinearLayout>
 
@@ -164,7 +164,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/mystory"
+                    android:src="@drawable/profile7"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@color/pink" />
 
@@ -189,7 +189,7 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/mystory"
+                    android:src="@drawable/profile9"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@color/pink" />
 
@@ -202,8 +202,8 @@
                     android:textSize="14sp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
                     android:text="Message"
                     android:textSize="12sp"
                     android:backgroundTint="@color/pink"
@@ -234,8 +234,8 @@
                     android:textSize="14sp" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
                     android:text="Follow"
                     android:textSize="12sp"
                     android:backgroundTint="@color/pink"
@@ -255,16 +255,66 @@
 
     <!-- Bottom Navigation -->
     <LinearLayout
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:weightSum="5"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:src="@drawable/bottomtab"
-            android:scaleType="fitXY" />
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/home1"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/nav_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/nav_reels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/reels"
+            app:tint="@color/darkbrown" />
+
+        <ImageView
+            android:id="@+id/nav_shop"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/like1"
+            android:scaleType="centerInside"
+            app:tint="@color/darkbrown"
+            android:padding="6dp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_profile"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:src="@drawable/mystory"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/pink"
+            android:scaleType="centerCrop" />
     </LinearLayout>
 
 </LinearLayout>

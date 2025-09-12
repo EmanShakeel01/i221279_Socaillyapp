@@ -6,22 +6,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="bottom|center_horizontal"
+    android:gravity="center_horizontal"
     tools:context=".editprofile">
 
+
+    <!-- Top Bar -->
 
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:src="@drawable/status"
+        android:layout_height="50dp"
         android:scaleType="fitXY"
-        app:tint="@android:color/black" />
-    <!-- Top Bar -->
+        android:src="@drawable/status"
+        android:tint="@android:color/black" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="12dp">
+        android:paddingVertical="10dp">
 
         <TextView
             android:id="@+id/cancelText"
@@ -29,7 +31,8 @@
             android:layout_height="wrap_content"
             android:text="Cancel"
             android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textColor="@color/darkbrown"
             android:layout_alignParentStart="true" />
 
         <TextView
@@ -46,8 +49,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Done"
+            android:textStyle="bold"
             android:textSize="16sp"
-            android:textColor="@color/pink"
+            android:textColor="@color/darkbrown"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
@@ -75,6 +79,7 @@
             android:layout_height="wrap_content"
             android:text="Change Profile Photo"
             android:textSize="14sp"
+            android:textStyle="bold"
             android:textColor="@color/pink"
             android:layout_marginTop="8dp" />
     </LinearLayout>
@@ -92,7 +97,7 @@
             android:hint="Name"
             android:text="Jacob West"
             android:background="@null"
-            android:padding="12dp" />
+            android:padding="10dp" />
 
         <View
             android:layout_width="match_parent"
@@ -105,7 +110,7 @@
             android:hint="Username"
             android:text="jacob_w"
             android:background="@null"
-            android:padding="12dp" />
+            android:padding="10dp" />
 
         <View
             android:layout_width="match_parent"
@@ -117,7 +122,7 @@
             android:layout_height="wrap_content"
             android:hint="Website"
             android:background="@null"
-            android:padding="12dp" />
+            android:padding="10dp" />
 
         <View
             android:layout_width="match_parent"
@@ -130,7 +135,7 @@
             android:hint="Bio"
             android:text="Digital goodies designer @pixsellz. Everything is designed."
             android:background="@null"
-            android:padding="12dp" />
+            android:padding="10dp" />
     </LinearLayout>
 
     <!-- Switch to Professional -->
@@ -140,7 +145,9 @@
         android:text="Switch to Professional Account"
         android:textColor="@color/pink"
         android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start" />
+
 
     <!-- Private Information -->
     <TextView
@@ -148,6 +155,7 @@
         android:layout_height="wrap_content"
         android:text="Private Information"
         android:textSize="14sp"
+        android:layout_gravity="start"
         android:textStyle="bold"
         android:layout_marginTop="24dp" />
 
@@ -157,7 +165,7 @@
         android:hint="Email"
         android:text="jacob.west@gmail.com"
         android:background="@null"
-        android:padding="12dp" />
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -165,7 +173,7 @@
         android:hint="Phone"
         android:text="+1 202 555 0147"
         android:background="@null"
-        android:padding="12dp" />
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -173,15 +181,21 @@
         android:hint="Gender"
         android:text="Male"
         android:background="@null"
-        android:padding="12dp" />
+        android:padding="10dp" />
 
-    <ImageView
-        android:id="@+id/line"
-        android:layout_width="100dp"
-        android:layout_height="4dp"
-        android:src="@drawable/line"
-        android:layout_marginBottom="16dp"
-        android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp">
 
-
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="120dp"
+            android:layout_height="8dp"
+            android:src="@drawable/line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
 </LinearLayout>
+

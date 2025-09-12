@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Socially"
             android:textSize="50sp"
-            android:textColor="#8B5A5A"
+            android:textColor="@color/darkbrown"
             android:textStyle="bold"
             android:fontFamily="sans-serif-light"
             android:layout_marginBottom="60dp" />
@@ -42,7 +42,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginBottom="16dp"
-            android:src="@drawable/circle"
+            android:src="@drawable/profile1"
             android:scaleType="centerCrop"
             android:background="@drawable/circle" />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:text="jacob_w"
             android:textSize="16sp"
-            android:textColor="#666666"
+            android:textColor="@color/black"
             android:layout_marginBottom="32dp" />
 
         <!-- Login Button -->
@@ -76,7 +76,8 @@
             android:layout_height="wrap_content"
             android:text="Switch accounts"
             android:textSize="14sp"
-            android:textColor="#8B5A5A"
+            android:textStyle="bold"
+            android:textColor="@color/darkbrown"
             android:layout_marginBottom="40dp" />
 
         <!-- Sign Up Link -->
@@ -90,14 +91,16 @@
                 android:layout_height="wrap_content"
                 android:text="Don't have an account? "
                 android:textSize="14sp"
-                android:textColor="#666666" />
+                android:layout_marginTop="100dp"
+                android:textColor="@color/pink" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign up."
                 android:textSize="14sp"
-                android:textColor="#8B5A5A"
+                android:layout_marginTop="100dp"
+                android:textColor="@color/darkbrown"
                 android:textStyle="bold" />
 
         </LinearLayout>
