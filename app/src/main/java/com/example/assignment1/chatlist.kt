@@ -19,6 +19,11 @@ class chatlist : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val cross = findViewById< ImageView>(R.id.back)
+        cross.setOnClickListener {
+            val intent = Intent(this, homepage::class.java)
+            startActivity(intent)
+        }
 
     }
 }

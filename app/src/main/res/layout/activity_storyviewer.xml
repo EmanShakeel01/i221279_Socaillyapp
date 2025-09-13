@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/status"
         android:scaleType="fitXY"
         app:tint="@android:color/white" />
@@ -33,6 +33,7 @@
             android:layout_weight="1"
             android:progress="50"
             android:layout_marginTop="50dp"
+            android:tint="@color/white"
             android:progressDrawable="@drawable/line"
             android:max="100"/>
 
@@ -45,6 +46,7 @@
             android:progress="0"
             android:layout_marginTop="50dp"
             android:progressDrawable="@drawable/line"
+            android:tint="@color/white"
             android:max="100"
             android:layout_marginStart="4dp"/>
 
@@ -58,6 +60,7 @@
             android:layout_marginTop="50dp"
             android:progressDrawable="@drawable/line"
             android:max="100"
+            android:tint="@color/white"
             android:layout_marginStart="4dp"/>
     </LinearLayout>
 
@@ -69,7 +72,7 @@
         android:layout_below="@id/storyViewer"
         android:orientation="horizontal"
         android:padding="12dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -98,6 +101,13 @@
         android:layout_above="@id/messageBar"
         android:scaleType="centerCrop"
         android:src="@drawable/otherstory1" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="31dp"
+        android:layout_height="36dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="90dp"
+        app:tint="@color/black" />
 
     <!-- Bottom message bar -->
     <LinearLayout
@@ -113,26 +123,29 @@
         <EditText
             android:id="@+id/messageInput"
             android:layout_width="0dp"
+            android:layout_marginBottom="8dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Send Message"
-            android:padding="10dp"
+            android:padding="20dp"
             android:textColorHint="@color/pink"
             android:textColor="#fff" />
         <ImageView
             android:id="@+id/searchButton"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/options"
             app:tint="@color/pink"
             android:layout_marginStart="8dp"/>
 
         <ImageView
-            android:id="@+id/sendButton"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
+            android:id="@+id/sendbtn"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/share"
             app:tint="@color/pink"
-            android:layout_marginStart="8dp"/>
+            android:layout_marginStart="9dp"/>
     </LinearLayout>
 </RelativeLayout>

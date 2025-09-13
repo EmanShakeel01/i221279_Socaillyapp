@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/status"
         android:scaleType="fitXY"
         app:tint="@android:color/white"
@@ -27,7 +27,13 @@
         android:layout_above="@id/bottomButtons"
         android:scaleType="centerCrop"
         android:src="@drawable/mystory1" />
-
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="31dp"
+        android:layout_height="36dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="50dp"
+        android:tint="@color/black" />
 
     <!-- Top-right icons -->
     <LinearLayout

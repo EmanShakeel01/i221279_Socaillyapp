@@ -2,6 +2,7 @@ package com.example.assignment1
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -15,6 +16,7 @@ class Login1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login1)
+        Log.d("ActivityStack", "Login1 onCreate")
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -33,19 +35,33 @@ class Login1 : AppCompatActivity() {
         signupText.setOnClickListener {
             val intent = Intent(this, signup::class.java)
             startActivity(intent)
+
         }
 
         val switchaccount = findViewById<TextView>(R.id.switchacc)
         switchaccount.setOnClickListener {
             val intent = Intent(this, login2::class.java)
             startActivity(intent)
+
         }
 
         val loginBtn = findViewById<android.widget.Button>(R.id.login)
         loginBtn.setOnClickListener {
             val intent = Intent(this, login2::class.java)
             startActivity(intent)
+
         }
 
     }
+
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("ActivityStack", "Login1 onDestroy")
+    }
+
+
+
+
+
 }

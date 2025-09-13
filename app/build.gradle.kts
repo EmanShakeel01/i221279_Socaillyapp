@@ -10,11 +10,12 @@ android {
     defaultConfig {
         applicationId = "com.example.assignment1"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
@@ -47,5 +48,17 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.google.android.material:material:1.9.0")
+    // AndroidX Test - JUnit
+    implementation("androidx.core:core-ktx:1.13.1")
+
+    // JUnit
+    testImplementation("junit:junit:4.13.2")
+
+    // AndroidX JUnit (instrumentation tests)
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test:runner:1.5.2")
+
+    // Espresso
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
 }

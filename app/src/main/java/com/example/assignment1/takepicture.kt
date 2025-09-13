@@ -23,5 +23,10 @@ class takepicture : AppCompatActivity() {
             val intent = Intent(this, storyviewer1::class.java)
             startActivity(intent)
         }
+        val cross = findViewById< ImageView>(R.id.back)
+        cross.setOnClickListener {
+            val intent = Intent(this, homepage::class.java)
+            startActivity(intent)
+        }
     }
 }

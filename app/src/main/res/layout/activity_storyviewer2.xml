@@ -7,25 +7,39 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".storyviewer2">
+
+    <!-- Top status bar -->
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/status"
         android:scaleType="fitXY"
-        app:tint="@android:color/white"
+        android:tint="@android:color/white"
         android:layout_alignParentTop="true" />
 
+    <!-- Top bar with back (left) and profile (right) -->
+
+
     <!-- Story Image filling screen -->
+
+    <!-- Floating heart animation area -->
     <ImageView
         android:id="@+id/storyImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/top"
+        android:layout_marginTop="-7dp"
         android:scaleType="centerCrop"
         android:src="@drawable/mystory1" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="31dp"
+        android:layout_height="36dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="50dp"
+        android:tint="@color/black" />
 
-    <!-- Floating heart animation area -->
     <LinearLayout
         android:id="@+id/heartContainer"
         android:layout_width="wrap_content"
@@ -37,7 +51,6 @@
         android:layout_marginBottom="80dp"
         android:gravity="bottom">
 
-        <!-- Example static hearts -->
         <ImageView
             android:layout_width="24dp"
             android:layout_height="41dp"
@@ -49,9 +62,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/like1"
-            android:tint="@android:color/holo_red_light"/>
+            android:tint="@android:color/holo_red_light" />
     </LinearLayout>
-
 
     <!-- Bottom navigation bar -->
     <LinearLayout
@@ -76,13 +88,13 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/activity"
-                android:tint="@android:color/white"/>
+                android:tint="@color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Activity"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"/>
+                android:textColor="@color/white"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Create tab -->
@@ -97,13 +109,13 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/reels"
-                android:tint="@android:color/white"/>
+                android:tint="@android:color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Create"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Facebook tab -->
@@ -118,13 +130,13 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/share"
-                android:tint="@android:color/white"/>
+                android:tint="@android:color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Facebook"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- Highlight tab -->
@@ -139,13 +151,13 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/like1"
-                android:tint="@android:color/white"/>
+                android:tint="@android:color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Highlight"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
         </LinearLayout>
 
         <!-- More tab -->
@@ -160,15 +172,13 @@
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:src="@drawable/options"
-                android:tint="@android:color/white"/>
+                android:tint="@android:color/white" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="More"
                 android:textColor="@android:color/white"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
         </LinearLayout>
     </LinearLayout>
-
-
 </RelativeLayout>
