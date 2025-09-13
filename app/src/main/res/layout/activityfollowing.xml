@@ -46,7 +46,7 @@
                     android:textColor="@color/pink"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:gravity="center" />
+                    android:gravity="center"  />
 
                 <TextView
                     android:id="@+id/You"
@@ -244,13 +244,13 @@
             android:padding="10dp" />
 
         <ImageView
-            android:id="@+id/nav_reels"
+            android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/reels"
+            android:src="@drawable/add"
             app:tint="@color/darkbrown" />
 
         <ImageView

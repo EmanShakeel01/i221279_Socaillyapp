@@ -3,7 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:id="@+id/main"
+    tools:context=".activityprofile2"
     android:background="@android:color/white">
 
     <!-- Scrollable content -->
@@ -24,7 +27,7 @@
                 android:layout_height="50dp"
                 android:src="@drawable/status"
                 android:scaleType="fitXY"
-                android:tint="@android:color/black" />
+                app:tint="@android:color/black" />
 
             <!-- Top Bar -->
             <RelativeLayout
@@ -47,7 +50,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/notes"
-                    android:tint="@color/pink"
+                    app:tint="@color/pink"
                     android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
@@ -194,6 +197,7 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/follow"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
@@ -203,6 +207,7 @@
                     android:textStyle="bold"/>
 
                 <Button
+                    android:id="@+id/msg"
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
@@ -243,6 +248,7 @@
                         android:gravity="center">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight1"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:src="@drawable/profile3"
@@ -290,13 +296,13 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/grid"
-                    android:tint="@color/pink"
+                    app:tint="@color/pink"
                     android:layout_margin="16dp" />
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:tint="@color/pink"
+                    app:tint="@color/pink"
                     android:src="@drawable/photos"
                     android:layout_margin="16dp" />
             </LinearLayout>
@@ -391,17 +397,17 @@
             android:padding="10dp" />
 
         <ImageView
-            android:id="@+id/nav_reels"
+            android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/reels"
+            android:src="@drawable/add"
             app:tint="@color/darkbrown" />
 
         <ImageView
-            android:id="@+id/nav_shop"
+            android:id="@+id/nav_like"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"

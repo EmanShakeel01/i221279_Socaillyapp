@@ -325,6 +325,7 @@
         android:padding="8dp">
 
         <ImageView
+            android:id="@+id/cam"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/camera"

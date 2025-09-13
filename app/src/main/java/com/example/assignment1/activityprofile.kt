@@ -2,6 +2,7 @@ package com.example.assignment1
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -40,6 +41,24 @@ class activityprofile : AppCompatActivity() {
             val intent = Intent(this, activityprofile::class.java)
             startActivity(intent)
         }
+
+        val edit = findViewById<Button>(R.id.editingprofile)
+        edit.setOnClickListener {
+            val intent = Intent(this, editprofile::class.java)
+            startActivity(intent)
+        }
+        val addpic = findViewById< ImageView>(R.id.add)
+        addpic.setOnClickListener {
+            val intent = Intent(this, selectpicture::class.java)
+            startActivity(intent)
+        }
+
+        val highlight = findViewById< CircleImageView>(R.id.highlight1)
+        highlight.setOnClickListener {
+            val intent = Intent(this, highlights::class.java)
+            startActivity(intent)
+        }
+
 
 
 

@@ -49,6 +49,11 @@ class searchpage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val addpic = findViewById< ImageView>(R.id.add)
+        addpic.setOnClickListener {
+            val intent = Intent(this, selectpicture::class.java)
+            startActivity(intent)
+        }
 
 
     }

@@ -41,6 +41,11 @@ class activitypage : AppCompatActivity() {
             val intent = Intent(this, activityprofile::class.java)
             startActivity(intent)
         }
+        val addpic = findViewById< ImageView>(R.id.add)
+        addpic.setOnClickListener {
+            val intent = Intent(this, selectpicture::class.java)
+            startActivity(intent)
+        }
 
         val you = findViewById<TextView>(R.id.You)
         you.setOnClickListener {

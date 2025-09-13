@@ -64,11 +64,11 @@
             android:src="@drawable/notes"
             android:background="@android:color/transparent"
             android:contentDescription="Message"
-            android:tint="@android:color/white" />
+            app:tint="@android:color/white" />
 
         <!-- End Call -->
         <ImageButton
-            android:id="@+id/endCallBtn"
+            android:id="@+id/endCall"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_weight="1"
@@ -76,7 +76,7 @@
             android:backgroundTint="@android:color/holo_red_dark"
             android:background="@drawable/round_red"
             android:contentDescription="End Call"
-            android:tint="@android:color/white"
+            app:tint="@android:color/white"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"/>
 
@@ -91,7 +91,7 @@
             android:contentDescription="Speaker"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
-            android:tint="@android:color/white"
+            app:tint="@android:color/white"
             android:padding="30dp"/>  <!-- reduce padding for bigger icon -->
 
     </LinearLayout>

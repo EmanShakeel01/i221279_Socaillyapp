@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:layout_below="@id/top"
         android:scaleType="centerCrop"
-        android:src="@drawable/postsample" />
+        android:src="@drawable/mystory1" />
 
     <!-- Floating heart animation area -->
     <LinearLayout
@@ -170,13 +170,5 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Bottom indicator line -->
-    <ImageView
-        android:id="@+id/line"
-        android:layout_width="100dp"
-        android:layout_height="4dp"
-        android:src="@drawable/line"
-        android:layout_above="@id/bottomNav"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"/>
+
 </RelativeLayout>

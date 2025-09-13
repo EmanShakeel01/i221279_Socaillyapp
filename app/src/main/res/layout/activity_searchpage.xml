@@ -32,6 +32,7 @@
             app:tint="@color/darkbrown"
             android:src="@drawable/search" />
 
+
         <EditText
             android:id="@+id/searchEdit"
             android:layout_width="0dp"
@@ -266,13 +267,13 @@
             android:padding="10dp" />
 
         <ImageView
-            android:id="@+id/nav_reels"
+            android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/reels"
+            android:src="@drawable/add"
             app:tint="@color/darkbrown" />
 
         <ImageView

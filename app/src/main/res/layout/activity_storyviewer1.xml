@@ -26,7 +26,7 @@
         android:layout_below="@id/top"
         android:layout_above="@id/bottomButtons"
         android:scaleType="centerCrop"
-        android:src="@drawable/postsample" />
+        android:src="@drawable/mystory1" />
 
 
     <!-- Top-right icons -->
@@ -112,8 +112,7 @@
             android:layout_height="48dp"
             android:src="@drawable/back2"
             android:backgroundTint="@color/pink"
-
-            android:tint="@android:color/white"/>
+            app:tint="@android:color/white"/>
 
 
     </LinearLayout>

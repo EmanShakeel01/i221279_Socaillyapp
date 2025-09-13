@@ -97,7 +97,7 @@
         android:layout_below="@id/topBar"
         android:layout_above="@id/messageBar"
         android:scaleType="centerCrop"
-        android:src="@drawable/postsample" />
+        android:src="@drawable/otherstory1" />
 
     <!-- Bottom message bar -->
     <LinearLayout

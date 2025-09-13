@@ -7,7 +7,7 @@
     android:background="@color/dustypink"
     android:fitsSystemWindows="true"
     android:scrollbars="none"
-    tools:context=".signup">
+    tools:context=".signup" >
 
     <LinearLayout
         android:id="@+id/signup"

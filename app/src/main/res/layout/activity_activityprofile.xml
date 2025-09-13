@@ -198,6 +198,7 @@
                 android:gravity="center">
 
                 <Button
+                    android:id="@+id/editingprofile"
                     android:layout_width="180dp"
                     android:layout_height="40dp"
                     android:text="Edit Profile"
@@ -226,6 +227,7 @@
                         android:gravity="center">
 
                         <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/highlight1"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:src="@drawable/profile3"
@@ -376,13 +378,13 @@
             android:padding="10dp" />
 
         <ImageView
-            android:id="@+id/nav_reels"
+            android:id="@+id/add"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/reels"
+            android:src="@drawable/add"
             app:tint="@color/darkbrown" />
 
         <ImageView
@@ -406,8 +408,6 @@
             app:civ_border_color="@color/pink"
             android:scaleType="centerCrop" />
     </LinearLayout>
-
-
 
     <ImageView
         android:id="@+id/line"

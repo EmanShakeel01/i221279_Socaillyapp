@@ -119,7 +119,7 @@
                 android:paddingHorizontal="12dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/avatarImage"
+                    android:id="@+id/searchresult"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/profile10"
@@ -129,6 +129,7 @@
 
 
                 <LinearLayout
+                    android:id="@+id/searchresult1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

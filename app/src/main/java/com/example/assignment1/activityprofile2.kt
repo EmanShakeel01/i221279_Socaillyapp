@@ -1,10 +1,14 @@
 package com.example.assignment1
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import de.hdodenhof.circleimageview.CircleImageView
 
 class activityprofile2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +20,49 @@ class activityprofile2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val homeNav = findViewById<ImageView>(R.id.nav_home)
+        homeNav.setOnClickListener {
+            val intent = Intent(this, homepage::class.java)
+            startActivity(intent)
+        }
+
+        val likeNav = findViewById<ImageView>(R.id.nav_like)
+        likeNav.setOnClickListener {
+            val intent = Intent(this, activitypage::class.java)
+            startActivity(intent)
+        }
+        val searchNav = findViewById<ImageView>(R.id.nav_search)
+        searchNav.setOnClickListener {
+            val intent = Intent(this, searchpage::class.java)
+            startActivity(intent)
+        }
+        val profileNav = findViewById< CircleImageView>(R.id.nav_profile)
+        profileNav.setOnClickListener {
+            val intent = Intent(this, activityprofile::class.java)
+            startActivity(intent)
+        }
+
+        val follow = findViewById<Button>(R.id.follow)
+        follow.setOnClickListener {
+            val intent = Intent(this, myprofilepage::class.java)
+            startActivity(intent)
+        }
+        val msg = findViewById<Button>(R.id.msg)
+        msg.setOnClickListener {
+            val intent = Intent(this, inbox::class.java)
+            startActivity(intent)
+        }
+        val addpic = findViewById< ImageView>(R.id.add)
+        addpic.setOnClickListener {
+            val intent = Intent(this, selectpicture::class.java)
+            startActivity(intent)
+        }
+        val highlight = findViewById< CircleImageView>(R.id.highlight1)
+        highlight.setOnClickListener {
+            val intent = Intent(this, highlights::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

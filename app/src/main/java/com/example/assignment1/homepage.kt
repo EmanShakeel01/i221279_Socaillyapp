@@ -40,5 +40,32 @@ class homepage : AppCompatActivity() {
             val intent = Intent(this, activityprofile::class.java)
             startActivity(intent)
         }
+        val addpic = findViewById< ImageView>(R.id.add)
+        addpic.setOnClickListener {
+            val intent = Intent(this, selectpicture::class.java)
+            startActivity(intent)
+        }
+        val camera= findViewById< ImageView>(R.id.camera1)
+        camera.setOnClickListener {
+            val intent = Intent(this, takepicture::class.java)
+            startActivity(intent)
+        }
+        val mystory = findViewById<CircleImageView>(R.id.story1)
+        mystory.setOnClickListener {
+            val intent = Intent(this, storyviewer2::class.java)
+            startActivity(intent)
+        }
+        val otherstory = findViewById<CircleImageView>(R.id.story2)
+        otherstory.setOnClickListener {
+            val intent = Intent(this, storyviewer::class.java)
+            startActivity(intent)
+        }
+        val message = findViewById< ImageView>(R.id.message1)
+        message.setOnClickListener {
+            val intent = Intent(this, chatlist::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }
