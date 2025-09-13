@@ -36,11 +36,11 @@
 
             <ImageView
                 android:id="@+id/back"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="17dp"
+                android:layout_height="15dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="17dp"
                 android:src="@drawable/back" />
 
             <TextView
@@ -201,12 +201,13 @@
 
         <!-- BUTTON -->
         <Button
+            android:id="@+id/createacc"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="32dp"
-            android:background="@drawable/button_signup"
             android:clipToOutline="true"
-            android:enabled="false"
+            android:enabled="true"
+            android:backgroundTint="@color/darkbrown"
             android:text="Create An Account"
             android:textColor="@color/lightgrey" />
 

@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/status"
         android:scaleType="fitXY"
         app:tint="@android:color/black" />
@@ -38,6 +38,7 @@
                 android:gravity="center">
 
                 <TextView
+                    android:id="@+id/following"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -48,6 +49,7 @@
                     android:gravity="center" />
 
                 <TextView
+                    android:id="@+id/You"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -208,6 +210,7 @@
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
+    <!-- Bottom Navigation Bar -->
     <LinearLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
@@ -216,6 +219,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:weightSum="5"
+        android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
         android:elevation="8dp">
 
@@ -234,7 +238,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/search"
+            android:src="@drawable/search2"
             android:scaleType="centerInside"
             app:tint="@color/darkbrown"
             android:padding="10dp" />
@@ -250,11 +254,11 @@
             app:tint="@color/darkbrown" />
 
         <ImageView
-            android:id="@+id/nav_shop"
+            android:id="@+id/nav_like"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/like1"
+            android:src="@drawable/like"
             android:scaleType="centerInside"
             app:tint="@color/darkbrown"
             android:padding="6dp" />
@@ -271,20 +275,14 @@
             android:scaleType="centerCrop" />
     </LinearLayout>
 
-    <!-- Bottom Line -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginBottom="16dp">
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        app:tint="@color/darkbrown"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="-15dp" />
 
-        <ImageView
-            android:id="@+id/line"
-            android:layout_width="150dp"
-            android:layout_height="4dp"
-            android:src="@drawable/line"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp" />
-    </RelativeLayout>
 
 </LinearLayout>

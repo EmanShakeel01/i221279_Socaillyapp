@@ -15,7 +15,7 @@
             android:name=".activityprofile2"
             android:exported="false" />
         <activity
-            android:name=".activitypofile"
+            android:name=".activityprofile"
             android:exported="false" />
         <activity
             android:name=".storyviewer2"

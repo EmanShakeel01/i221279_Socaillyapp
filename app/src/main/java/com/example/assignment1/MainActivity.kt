@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         // 👇 When user touches anywhere on first page
         findViewById< LinearLayout>(R.id.main)?.setOnClickListener {
-            val intent = Intent(this, signup::class.java)
+            val intent = Intent(this, Login1::class.java)
             startActivity(intent)
 
         }

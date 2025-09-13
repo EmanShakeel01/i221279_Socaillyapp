@@ -7,14 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Login1">
 
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/status"
         android:scaleType="fitXY"
+        app:tint="@android:color/black" />
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_gravity="start"
+        android:src="@drawable/back"
         app:tint="@android:color/black" />
 
     <!-- Center Content -->
@@ -25,6 +32,10 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="24dp">
+
+
+
+
 
         <!-- App Title -->
         <TextView
@@ -59,6 +70,7 @@
 
 
         <Button
+            android:id="@+id/login"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:text="Log in"
@@ -72,6 +84,7 @@
 
         <!-- Switch Accounts -->
         <TextView
+            android:id="@+id/switchacc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Switch accounts"
@@ -95,6 +108,7 @@
                 android:textColor="@color/pink" />
 
             <TextView
+                android:id="@+id/signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sign up."
@@ -122,6 +136,7 @@
             android:src="@drawable/line"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"/>
+
     </RelativeLayout>
 
 </LinearLayout>

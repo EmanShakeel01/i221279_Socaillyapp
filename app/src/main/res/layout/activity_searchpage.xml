@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".searchpage">
 
     <!-- Top status strip -->
     <ImageView
@@ -29,7 +29,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="24dp"
-            android:tint="@color/darkbrown"
+            app:tint="@color/darkbrown"
             android:src="@drawable/search" />
 
         <EditText
@@ -48,7 +48,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:tint="@color/darkbrown"
+            app:tint="@color/darkbrown"
             android:src="@drawable/options" />
     </LinearLayout>
 
@@ -241,6 +241,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:weightSum="5"
+        android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
         android:elevation="8dp">
 
@@ -275,7 +276,7 @@
             app:tint="@color/darkbrown" />
 
         <ImageView
-            android:id="@+id/nav_shop"
+            android:id="@+id/nav_like"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -297,20 +298,16 @@
     </LinearLayout>
 
 
-    <!-- Bottom Handle Line -->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingBottom="8dp">
 
-        <ImageView
-            android:id="@+id/line"
-            android:layout_width="120dp"
-            android:layout_height="4dp"
-            android:src="@drawable/line"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="4dp" />
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        app:tint="@color/darkbrown"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="-15dp" />
+
+
 
 </LinearLayout>

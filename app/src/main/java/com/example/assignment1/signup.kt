@@ -1,7 +1,10 @@
 package com.example.assignment1
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,6 +27,13 @@ class signup : AppCompatActivity() {
         backBtn.setOnClickListener {
             onBackPressedDispatcher.onBackPressed() // goes back to MainActivity
 
+        }
+
+        val acc = findViewById<android.widget.Button>(R.id.createacc)
+        acc.setOnClickListener {
+          //  Toast.makeText(this, "Signup !", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, login2::class.java)
+            startActivity(intent)
         }
     }
 }

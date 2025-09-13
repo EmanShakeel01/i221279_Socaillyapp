@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".homepage">
 
     <!-- Scrollable Content -->
     <ScrollView
@@ -306,14 +306,7 @@
             </LinearLayout>
 
             <!-- Divider (moved closer, no big margin) -->
-            <ImageView
-                android:id="@+id/line"
-                android:layout_width="120dp"
-                android:layout_height="4dp"
-                android:src="@drawable/line"
-                android:layout_gravity="center_horizontal"
-                app:tint="@color/darkbrown"
-                android:layout_marginTop="20dp" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -326,6 +319,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:weightSum="5"
+         android:layout_marginBottom="16dp"
         android:layout_alignParentBottom="true"
         android:elevation="8dp">
 
@@ -360,7 +354,7 @@
             app:tint="@color/darkbrown" />
 
         <ImageView
-            android:id="@+id/nav_shop"
+            android:id="@+id/nav_like"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
@@ -379,5 +373,16 @@
             app:civ_border_width="2dp"
             app:civ_border_color="@color/pink"
             android:scaleType="centerCrop" />
+
     </LinearLayout>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="100dp"
+        android:layout_height="4dp"
+        android:src="@drawable/line"
+        app:tint="@color/darkbrown"
+        android:layout_below="@id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp" />
+
 </RelativeLayout>
