@@ -43,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="from"
+            android:fontFamily="@font/red_hat"
             android:textSize="16sp"
             android:textColor="@color/lightgrey"
             android:layout_centerHorizontal="true"/>
@@ -54,6 +55,7 @@
             android:text="SMD"
             android:textStyle="bold"
             android:textSize="60sp"
+            android:fontFamily="@font/red_hat"
             android:textColor="@color/dustypink"
             android:layout_below="@id/fromText"
             android:layout_centerHorizontal="true"

@@ -9,7 +9,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.assignment1.R
 import de.hdodenhof.circleimageview.CircleImageView
 
 class activityprofile2 : AppCompatActivity() {
